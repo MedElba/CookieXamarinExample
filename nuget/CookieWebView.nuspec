@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata minClientVersion="2.8.1">
+		<id>CookieWebView</id>
+		<version>1.0.9</version>
+		<title>CookieWebView Control Plugin for Xamarin.Forms</title>
+		<authors>seansparkman</authors>
+		<owners>Sean Sparkman</owners>
+		<licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
+		<projectUrl>http://www.dfwmobile.net</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/sean-sparkman/CookiesWebView/master/plugin_icon.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Xamarin.Forms Web View that supports cookies and loading pages event</description>
+		<tags>xamarin monodroid monotouch windows8 winrt wp wpdev windowsphone xamarinforms</tags>
+		<dependencies>
+		  <dependency id="Xamarin.Forms" version="1.3.1.6296" />
+		</dependencies>
+	</metadata>
+	<files>		
+		<!-- PCL -->
+		<file src="..\Cookies\bin\Release\Cookies.dll" target="lib\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Cookies.dll" />
+		<file src="..\Cookies\bin\Release\Cookies.pdb" target="lib\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Cookies.pdb" />
+		<file src="..\Cookies\bin\Release\Cookies.xml" target="lib\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Cookies.xml" />
+
+		<!-- Windows Phone -->
+		<file src="..\Cookies.WinPhone\bin\Release\Cookies.dll" target="lib\wp8\Cookies.dll" />
+		<file src="..\Cookies.WinPhone\bin\Release\Cookies.pdb" target="lib\wp8\Cookies.pdb" />
+		<file src="..\Cookies.WinPhone\bin\Release\Cookies.xml" target="lib\wp8\Cookies.xml" />
+		<file src="..\Cookies.WinPhone\bin\Release\Cookies.WinPhone.dll" target="lib\wp8\Cookies.WinPhone.dll" />
+		<file src="..\Cookies.WinPhone\bin\Release\Cookies.WinPhone.pdb" target="lib\wp8\Cookies.WinPhone.pdb" />
+		<file src="..\Cookies.WinPhone\bin\Release\Cookies.WinPhone.xml" target="lib\wp8\Cookies.WinPhone.xml" />
+	
+		<!-- Android -->        
+		<file src="..\Cookies.Android\bin\Release\Cookies.dll" target="lib\MonoAndroid10\Cookies.dll" />
+		<file src="..\Cookies.Android\bin\Release\Cookies.pdb" target="lib\MonoAndroid10\Cookies.pdb" />
+		<file src="..\Cookies.Android\bin\Release\Cookies.xml" target="lib\MonoAndroid10\Cookies.xml" />
+		<file src="..\Cookies.Android\bin\Release\Cookies.Android.dll" target="lib\MonoAndroid10\Cookies.Android.dll" />
+		<file src="..\Cookies.Android\bin\Release\Cookies.Android.pdb" target="lib\MonoAndroid10\Cookies.Android.pdb" />
+		<file src="..\Cookies.Android\bin\Release\Cookies.Android.xml" target="lib\MonoAndroid10\Cookies.Android.xml" />
+		
+		<!-- iOS -->
+		<file src="..\Cookies.iOS\bin\iPhone\Release\Cookies.dll" target="lib\MonoTouch10\Cookies.dll" />
+		<file src="..\Cookies.iOS\bin\iPhone\Release\Cookies.pdb" target="lib\MonoTouch10\Cookies.pdb" />
+		<file src="..\Cookies.iOS\bin\iPhone\Release\Cookies.xml" target="lib\MonoTouch10\Cookies.xml" />
+		<file src="..\Cookies.iOS\bin\iPhone\Release\Cookies.iOS.dll" target="lib\MonoTouch10\Cookies.iOS.dll" />
+		<file src="..\Cookies.iOS\bin\iPhone\Release\Cookies.iOS.xml" target="lib\MonoTouch10\Cookies.iOS.xml" />		
+		<file src="iOS\IncludeLinker.cs.pp" target="content\MonoTouch10\IncludeLinker.cs.pp" />
+		
+		<!-- iOSUnified -->
+		<file src="..\Cookies.iOSUnified\bin\iPhone\Release\Cookies.dll" target="lib\Xamarin.iOS10\Cookies.dll" />
+		<file src="..\Cookies.iOSUnified\bin\iPhone\Release\Cookies.pdb" target="lib\Xamarin.iOS10\Cookies.pdb" />
+		<file src="..\Cookies.iOSUnified\bin\iPhone\Release\Cookies.xml" target="lib\Xamarin.iOS10\Cookies.xml" />
+		<file src="..\Cookies.iOSUnified\bin\iPhone\Release\Cookies.iOSUnified.dll" target="lib\Xamarin.iOS10\Cookies.iOSUnified.dll" />		
+		<file src="..\Cookies.iOSUnified\bin\iPhone\Release\Cookies.iOSUnified.xml" target="lib\Xamarin.iOS10\Cookies.iOSUnified.xml" />		
+		<file src="iOS\IncludeLinker.cs.pp" target="content\Xamarin.iOS10\IncludeLinker.cs.pp" />
+	</files>
+</package>
